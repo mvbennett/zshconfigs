@@ -49,9 +49,9 @@
         "tmp": true
     },
     "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false,
     "files.watcherExclude":
     {
         "**/audits/**": true,
@@ -61,7 +61,6 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
     "python.defaultInterpreterPath": "~/.pyenv/shims/python",
     "python.formatting.provider": "yapf",
     "python.terminal.activateEnvironment": false,
@@ -71,9 +70,10 @@
     },
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
-    "workbench.iconTheme": "vscode-great-icons",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "wompManager.projectDirectory": "~/womp",
+    "git.autofetch": true
 }

@@ -10,8 +10,8 @@
   remote = yellow
 
 [core]
-  pager = less -FRSX
   editor = code --wait
+  autocrlf = false
 
 [alias]
   co = checkout
