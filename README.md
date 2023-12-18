@@ -2,7 +2,7 @@
 ## Oh My Zsh
 In a terminal execute the following command:
 
-`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+```sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 If asked "Do you want to change your default shell to zsh?", press Y
 
 At the end your terminal should look like this:
@@ -13,7 +13,7 @@ At the end your terminal should look like this:
 ### To install
 
 Navigate to zshconfigs directory and run the followin command:
-`zsh install.sh`
+```zsh install.sh```
 
 
 This repository is based on the one used by [Le Wagon](https://www.lewagon.com) students but with some major changes.
