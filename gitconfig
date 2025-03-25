@@ -10,49 +10,46 @@
   remote = yellow
 
 [core]
-  editor = code --wait
-  autocrlf = false
+  # editor = code --wait
+  # autocrlf = false
 
 [alias]
-  co = checkout
-  st = status -sb
-  br = branch
-  ci = commit
-  fo = fetch origin
-  d = !git --no-pager diff
-  dt  = difftool
-  stat = !git --no-pager diff --stat
-  rtz = !git stash && git pull
+  # co = checkout
+  # st = status -sb
+  # br = branch
+  # ci = commit
+  # fo = fetch origin
+  # d = !git --no-pager diff
+  # dt  = difftool
+  # stat = !git --no-pager diff --stat
+  # rtz = !git stash && git pull
 
   # Clean merged branches
-  sweep = !git branch --merged main | grep -v 'main$' | xargs git branch -d && git remote prune origin
+  # sweep = !git branch --merged main | grep -v 'main$' | xargs git branch -d && git remote prune origin
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
-  lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
+  # lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
 
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
-  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+  # serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 
-  m = checkout main
+  # m = checkout main
 
   # Removes a file from the index
-  unstage = reset HEAD --
+  # unstage = reset HEAD --
 
 [help]
   autocorrect = 1
 
 [push]
-	default = simple
+	# default = simple
 
 [branch "main"]
-  mergeoptions = --no-edit
+  # mergeoptions = --no-edit
 
 [pull]
-  rebase = false
+  # rebase = false
 
 [init]
   defaultBranch = main
-[user]
-	email = mvbennett9@gmail.com
-	name = Mike Bennett
