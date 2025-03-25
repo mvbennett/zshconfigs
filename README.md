@@ -1,5 +1,6 @@
-### Recommneded to add first:
+# Recommneded to add first:
 ## Oh My Zsh
+---
 In a terminal execute the following command:
 
 ```
@@ -13,11 +14,54 @@ At the end your terminal should look like this:
 ![oh_my_zsh](https://github.com/mvbennett/zshconfigs/assets/94943459/85b3d874-ef0c-4c72-bf8c-aac00120e469)
 
 
-### To install
-
-Navigate to zshconfigs directory and run the followin command:
+# Installing syntax highlighting and autosuggest plugins
+## Easy Way
+---
+1. Install Oh My Zsh to manage packages
 ```
-zsh install.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+```
+exec zsh
+```
+2. Download script to install syntax highlighting and autosuggest plugins
+```
+git clone git@github.com:mvbennett/zshconfigs.git
+```
+3. Install syntax plugins
+```
+cd /zshconfigs && zsh install.sh
+```
+
+```
+exec zsh
+```
+
+## Hard way
+---
+1. Download zsh syntax highlighting and zsh autosuggest directly
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+```
+2. find directory of packages
+```
+pwd
+```
+3. construct and run command for adding plugin to zshrc
+```
+echo "source <insert path to package>/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source <insert path to package>/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
+```
+exec zsh
+```
+4. In your zshrc you should see two lines similar to the ones below (the path will differ)
+```
+source usr/mike/zsh-autosuggestions/zsh-autosuggestions.zsh
+source usr/mike/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
 
