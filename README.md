@@ -1,6 +1,5 @@
 # Installing syntax highlighting and autosuggest plugins
 ## Recommended Easy Way
----
 1. Install Oh My Zsh to manage packages
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
