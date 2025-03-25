@@ -1,26 +1,14 @@
-# Recommneded to add first:
-## Oh My Zsh
----
-In a terminal execute the following command:
-
-```
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-If asked "Do you want to change your default shell to zsh?", press Y
-
-At the end your terminal should look like this:
-
-![oh_my_zsh](https://github.com/mvbennett/zshconfigs/assets/94943459/85b3d874-ef0c-4c72-bf8c-aac00120e469)
-
-
 # Installing syntax highlighting and autosuggest plugins
-## Easy Way
+## Recommended Easy Way
 ---
 1. Install Oh My Zsh to manage packages
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+If asked "Do you want to change your default shell to zsh?", press Y
+
+At the end your terminal should look like this:
+![oh_my_zsh](https://github.com/mvbennett/zshconfigs/assets/94943459/85b3d874-ef0c-4c72-bf8c-aac00120e469)
 
 ```
 exec zsh
